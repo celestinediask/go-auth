@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <style>
+    body {
+      padding-top: 70px;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .jumbotron {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #28a745;
+      text-align: center;
+    }
+    .user-info {
+      margin-top: 20px;
+    }
+    .user-info strong {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><i class="fa fa-user"></i> Profile </h1>
+      <div class="user-info">
+        <p>
+          <strong>Id</strong>: <span id="userId">{{.UserID}}</span><br>
+          <strong>Email</strong>: <span id="email">{{.Email}}</span><br>
+          <strong>Name</strong>: <span id="name">{{.Name}}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
